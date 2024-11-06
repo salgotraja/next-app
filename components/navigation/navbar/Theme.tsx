@@ -26,7 +26,6 @@ const Theme = () => {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        gi
         <DropdownMenuItem onClick={() => setTheme("light")}>
           Light
         </DropdownMenuItem>
