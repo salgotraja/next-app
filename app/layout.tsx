@@ -2,15 +2,14 @@ import type { Metadata } from "next";
 
 import localFont from "next/font/local";
 
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
 import { SessionProvider } from "next-auth/react";
 
+import "./globals.css";
 import { auth } from "@/auth";
 import { Toaster } from "@/components/ui/toaster";
 import ThemeProvider from "@/context/Theme";
-
-import "./globals.css";
 
 const inter = localFont({
   src: "./fonts/InterVF.ttf",
@@ -20,7 +19,7 @@ const inter = localFont({
 
 const spaceGrotesk = localFont({
   src: "./fonts/SpaceGroteskVF.ttf",
-  variable: "--font-inter",
+  variable: "--font-space-grotesk",
   weight: "300 400 500 700",
 });
 

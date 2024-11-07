@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 
 import React from "react";
@@ -27,7 +28,7 @@ const SocialAuthForm = () => {
         description:
           error instanceof Error
             ? error.message
-            : "An error occurred during sign-in",
+            : "An error occured during sign-in",
         variant: "destructive",
       });
     }
@@ -38,7 +39,7 @@ const SocialAuthForm = () => {
       <Button className={buttonClass} onClick={() => handleSignIn("github")}>
         <Image
           src="/icons/github.svg"
-          alt="GitHub Logo"
+          alt="Github Logo"
           width={20}
           height={20}
           className="invert-colors mr-2.5 object-contain"
